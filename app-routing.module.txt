@@ -1,0 +1,18 @@
+copia del routing module de mi proyecto front
+
+
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import {HomeComponent} from "./ui-components/home/home.component";
+import { VisualComponent } from './ui-components/pages/visual/visual.component';
+
+const routes: Routes = [
+  { path: '', component: HomeComponent },
+  { path: 'packages', component: VisualComponent }
+];
+//VisualComponent es donde se muestra el listado, porque era para asignarlo al role de visualizador
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
+})
+export class AppRoutingModule {}

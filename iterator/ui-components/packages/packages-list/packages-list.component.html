@@ -1,0 +1,15 @@
+<div>
+    <p class="title">Paquetes</p>
+  </div>
+  
+  <div class="main-list">
+    <!-- Listado desde BD -->
+    <div *ngFor="let package of packages" class="list-group">
+      <div class="list-group-item">
+        <p class="list-item">Product ID: {{ package.productID }}</p>
+        <p class="list-item">Route ID: {{ package.routeId }}</p>
+        <p class="list-item ">Status: {{ package.status }}</p>
+        <p class="list-item ">Date of assignment: {{ package.date }}</p>
+      </div>
+    </div>
+  </div>
